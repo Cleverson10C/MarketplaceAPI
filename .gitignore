@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+.env
+test.db
+test_suite.db
+.pytest_cache/
