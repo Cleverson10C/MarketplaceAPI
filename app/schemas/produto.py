@@ -21,8 +21,10 @@ class ProdutoAtualizacao(BaseModel):
     estoque_minimo: int = Field(ge=0, default=0)
 
 
-class ProdutoResposta(ProdutoBase):
+class ProdutoResposta(BaseModel):
     id: int
+    nome: str
+    preco: float
     estoque: int
     estoque_minimo: int
 

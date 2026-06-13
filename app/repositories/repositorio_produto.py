@@ -26,7 +26,7 @@ def criar_produto(sessao: Session, nome: str, preco: float, quantidade: int, est
 
 
 def listar_produtos(sessao: Session):
-    return sessao.query(Produto).all()
+    return sessao.query(Produto).order_by(Produto.id).all()
 
 
 def obter_produto_por_id(sessao: Session, produto_id: int):
